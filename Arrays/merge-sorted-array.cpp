@@ -18,17 +18,7 @@ int main(){
 
     int i = 0, j = 0, k =0;
 
-    while(i<m || j<n){
-        if( i == m || j == n ){
-            if( i == m){
-                arr3[k] = arr2[j++];
-            }
-            else if( j == n){
-                arr3[k] = arr1[i++];
-            }
-            k++;
-            continue;
-        }
+    while(i<m && j<n){
         if(arr1[i] > arr2[j]){
             arr3[k++] = arr2[j++];
         }
@@ -41,6 +31,16 @@ int main(){
         }
     }
 
+    while (i<m)
+    {
+        arr3[k++] = arr1[i++];
+    }
+
+    while (j<n)
+    {
+        arr3[k++] = arr2[j++];
+    }
+    
     cout<<"Merge Sort Array is :: ";
     for(int i=0; i<m+n;i++){
         cout<<arr3[i]<<" ";
