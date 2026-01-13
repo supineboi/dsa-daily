@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-    Reversing of an array using Juggling Method
+    Rotate array left by d steps using Juggling Algorithm
 */
 
 // Greatest Common Divisior (recursive function)
@@ -47,7 +47,7 @@ int main(){
         arr[j] = temp;
     }
 
-    cout<<"Reverse Array Elements :";
+    cout<<"Rotated Array: ";
     for(int j=0; j< arrLen; j++){
         cout<<arr[j]<<" ";
     }
