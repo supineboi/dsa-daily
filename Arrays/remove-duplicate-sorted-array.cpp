@@ -11,6 +11,10 @@ int main(){
     int arrLength = sizeof(arr)/sizeof(arr[0]);
 
     int res = 1;
+
+    // Efficient Approach
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
     for(int i=1; i< arrLength; i++){
         if(arr[i] != arr[res-1]){
             arr[res] = arr[i];
@@ -18,14 +22,27 @@ int main(){
         }
     }
 
+    // Naive Approach
+        // Time Complexity: O(n)
+        // Space Complexity: O(n)
+    // int temp[arrLength];
+    // temp[0] = arr[0];
+
+    // for(int i = 1; i < arrLength; i++)
+    // {
+    //     if(temp[res - 1] != arr[i])
+    //     {
+    //         temp[res] = arr[i];
+    //         res++;
+    //     }
+    // }
+
     cout<<"Final Array :";
     for(int j=0; j< res; j++){
-        cout<<arr[j]<<" ";
+        cout<<arr[j]<<" "; // For Efficient Approach
+        // cout<<temp[j]<<" "; // For Naive Approach
     }
     cout<<endl;
-
-    // Time Complexity: O(n)
-    // Space Complexity: O(1)
 
     return 0;
 }

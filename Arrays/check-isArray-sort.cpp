@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-    Check if an array is sorted or not
+    Check if an array is sorted or not (ascending order)
 */
 
 void isSorted(int arr[], int arrSize){
