@@ -4,7 +4,7 @@ using namespace std;
 
 /*
     Equilibrium Index ( balance node) => 
-    when sum of element atmthe lower index is equal to the 
+    when sum of element at the lower index is equal to the 
     sum of element at the higher index
 */
 int main(){
