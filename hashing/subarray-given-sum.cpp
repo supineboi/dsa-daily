@@ -4,7 +4,7 @@
 using namespace std;
 
 /*
-    Find Subarray is present or not of the given number
+    Find Subarray is present or not of the given number sum
 */
 
 int main(){
