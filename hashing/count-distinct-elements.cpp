@@ -9,12 +9,16 @@ using namespace std;
 int main(){
     unordered_set<int> hashT;
     int arr[] = {15, 12, 13, 12, 13, 13, 18}; // solution: 4
-    int arrSize = sizeof arr/ sizeof arr[0];
+    int n = sizeof arr/ sizeof arr[0];
 
-    for(int i=0; i< arrSize; i++){
+    for(int i=0; i< n; i++){
         hashT.insert(arr[i]);
     }
+
+    // More Efficient Solution
+    unordered_set<int> efficientHashT(arr, arr+n);
     cout<<"Count of the distinct elements in the array :: "<<hashT.size()<<endl;
+    cout<<"Count of the distinct elements in the Efficient array :: "<<efficientHashT.size()<<endl;
 
     return 0;
 
