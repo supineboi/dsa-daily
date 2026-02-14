@@ -11,14 +11,10 @@ int main(){
     int arr[] = {15, 12, 13, 12, 13, 13, 18}; // solution: 4
     int arrSize = sizeof arr/ sizeof arr[0];
 
-    int distinctCount = 0;
     for(int i=0; i< arrSize; i++){
-        if(hashT.find(arr[i]) == hashT.end()){
-            distinctCount++;
-        }
         hashT.insert(arr[i]);
     }
-    cout<<"Count of the distinct elements in the array :: "<<distinctCount<<endl;
+    cout<<"Count of the distinct elements in the array :: "<<hashT.size()<<endl;
 
     return 0;
 
